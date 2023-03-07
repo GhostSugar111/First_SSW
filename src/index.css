@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.beforeBox {
+  width: 100;
+  height: 100;
+  border-width: 1;
+  border-style: solid;
+  background-color: #d72c2c;
+}
+.title {
+  font-size: large;
+}
