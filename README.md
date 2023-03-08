@@ -1,70 +1,42 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+![image-20230307143052127](image-20230307143052127.png)
+示例 http://121.42.165.52/lawyer/lawyer![image-20230307143012131](image-20230307143012131.png)
 
-In the project directory, you can run:
+1. 布局 三个框 三个按钮
 
-### `npm start`
+   List 左右两个框 用props.list来动态加载css（位置 函数
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   ResultList 结果框 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   Btn 上下按钮 ok按钮
 
-### `npm test`
+   ok按钮点击后结果才显示
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   
 
-### `npm run build`
+2. 按钮事件
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   同一父组件下两个相同子组件更改状态不及时渲染
+   解决：在同一子组件下同时渲染两个子组件
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   双击 单击选中显示红色 双击移动
 
-### `npm run eject`
+   ​	单击 clickKey记录当前点击item的key 判断i和clickKey是否相同变红色
+   ​	点击函数参数 i:下标 判断clickKey==i移动 
+   ​	
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   左移 右移
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   解决：
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ![image-20230308124033279](image-20230308124033279.png)
+   
+   ok输出
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+​	父传子 getItems 处理完子传父items
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
